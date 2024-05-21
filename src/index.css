@@ -32,8 +32,8 @@ a {
 @media (max-width: 600px) {
   .ui-button {
     font-size: 18px;
-    border-radius: 10px;
-    padding: 4px 16px;
+    border-radius: 16px;
+    padding: 16px 32px;
   }
 }
 .ui-caption {
@@ -55,7 +55,7 @@ a {
 @media (max-width: 600px) {
   .ui-caption {
     font-size: 32px;
-    line-height: 1.2;
+    line-height: 1.1;
   }
 }
 .ui-list {
@@ -78,16 +78,16 @@ a {
 }
 @media (max-width: 600px) {
   .ui-list__item:before {
-    width: 16px;
-    height: 19px;
+    width: 10px;
+    height: 10px;
   }
 }
 .ui-list__item + .ui-list__item {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 @media (max-width: 600px) {
   .ui-list__item + .ui-list__item {
-    margin-top: 17px;
+    margin-top: 8px;
   }
 }
 .ui-checkbox {
@@ -144,6 +144,8 @@ a {
 @media (max-width: 600px) {
   .ui-checkbox__error {
     font-size: 10px;
+    margin-top: -5px;
+    margin-left: 23px;
   }
 }
 .ui-input {
@@ -167,7 +169,7 @@ a {
 }
 .ui-input__error {
   font-size: 13px;
-  color: red;
+  color: var(--redColor);
   line-height: 1.2;
   display: inline-block;
   position: absolute;
@@ -178,6 +180,8 @@ a {
 @media (max-width: 600px) {
   .ui-input__error {
     font-size: 10px;
+    margin-top: -9px;
+    margin-left: 20px;
   }
 }
 .ui-input__input {
@@ -190,7 +194,9 @@ a {
   font-size: 24px;
   border: 2px solid #5e6367;
   margin-top: 5px;
+  transition: 0.4s;
 }
+
 @media (max-width: 1400px) {
   .ui-input__input {
     font-size: 20px;
@@ -201,12 +207,14 @@ a {
     height: 40px;
     padding: 8px 16px;
     font-size: 14px;
+    border-width: 1px;
+    margin-top: 2px;
   }
 }
 .u-collapse-all {
   margin: 0;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 15px;
 }
 :root {
   --primaryColor: #1d1d1b;
@@ -296,7 +304,7 @@ img {
 
 @media (max-width: 600px) {
   .header {
-    padding: 6px 0;
+    padding: 16px 0;
   }
 }
 .header__logo {
@@ -309,8 +317,8 @@ img {
 
 @media (max-width: 600px) {
   .header__logo {
-    max-width: 152px;
-    height: 36px;
+    max-width: 158px;
+    height: 26px;
   }
 }
 .main-banner {
@@ -320,6 +328,9 @@ img {
   padding-bottom: 30px;
   background-color: #e1e2ff;
   border-radius: 32px;
+  margin-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 @media (max-width: 1024px) {
   .main-banner {
@@ -329,8 +340,11 @@ img {
 @media (max-width: 600px) {
   .main-banner {
     font-size: 18px;
-    padding-top: 12px;
+    padding-top: 17px;
     padding-bottom: 35px;
+    border-radius: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .main-banner__content {
@@ -344,7 +358,7 @@ img {
 @media (max-width: 600px) {
   .main-banner__content {
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
   }
 }
 
@@ -374,16 +388,17 @@ img {
   .main-benefits {
     grid-template-columns: 1fr;
     padding-top: 20px;
-    padding-bottom: 40px;
-    row-gap: 20px;
+    padding-bottom: 28px;
+    row-gap: 12px;
   }
 }
 .benefit-item {
   text-align: center;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 30px;
+  padding: 18px 20px 25px 20px;
+  border-radius: 24px;
   text-align: left;
+  min-height: 125px;
 }
 
 @media (min-width: 1200px) {
@@ -405,27 +420,31 @@ img {
   }
 }
 .benefit-item__title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 22px;
   margin-bottom: 6px;
 }
 @media (max-width: 1024px) {
   .benefit-item__title {
-    font-size: 24px;
-    margin-bottom: 1px;
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 }
 .how-to-get {
-  padding: 30px 0;
+  padding: 16px 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 50%;
+  background: #fff;
+  border-radius: 32px;
 }
+
 @media (max-width: 600px) {
   .how-to-get {
-    padding: 95px 0 0 0;
+    border-radius: 24px;
   }
 }
+
 .how-to-get__content {
   max-width: 1155px;
 }
@@ -434,7 +453,7 @@ img {
 }
 @media (max-width: 600px) {
   .how-to-get__title {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 }
 .registration {
@@ -442,7 +461,7 @@ img {
 }
 @media (max-width: 600px) {
   .registration {
-    padding: 10px 0;
+    padding: 20px 0;
   }
 }
 .registration__title {
@@ -463,6 +482,8 @@ img {
 @media (max-width: 600px) {
   .registration__content {
     font-size: 16px;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 .reg-form__row {
@@ -480,6 +501,7 @@ img {
   .reg-form__row {
     column-gap: 10px;
     flex-direction: column;
+    row-gap: 3px;
   }
 }
 .reg-form__field {
@@ -498,7 +520,7 @@ img {
 @media (max-width: 600px) {
   .reg-form__agree {
     font-size: 16px;
-    margin-top: 15px;
+    margin-top: 5px;
   }
 }
 .reg-form__button {
@@ -525,20 +547,23 @@ img {
   }
 }
 .footer {
-  background: #fff;
-  color: #1d1d1b;
+  color: #b8bdc1;
   padding: 32px 0;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.1;
   font-weight: 300;
 }
 
 @media (max-width: 600px) {
   .footer {
     font-size: 12px;
-    padding: 20px 0;
+    padding: 0 0 20px 0;
   }
 }
 .grecaptcha-badge {
   display: none !important;
+}
+
+.red {
+  border-color: var(--redColor) !important;
 }

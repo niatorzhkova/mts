@@ -27,9 +27,9 @@ export default function How() {
     }
   }, []);
   useEffect(() => {
-    const encryptedText = AES.encrypt(phoneValue, "rafinad");
+    // const encryptedText = AES.encrypt(phoneValue, "rafinad");
     const url = new URL(window.location.href);
-    url.searchParams.set("aff_sub6", encryptedText);
+    // url.searchParams.set("aff_sub6", encryptedText);
     url.searchParams.set("aff_sub7", "cert");
     window.history.pushState({ path: url.href }, "", url.href);
   }, [phoneValue]);
@@ -169,8 +169,8 @@ export default function How() {
 
   return (
     <React.Fragment>
-      <div className="how-to-get">
-        <div className="container">
+      <div className="container">
+        <div className="how-to-get">
           <div className="how-to-get__content">
             <h2 className="ui-caption how-to-get__title">
               Как получить сертификат?
@@ -218,7 +218,9 @@ export default function How() {
                         unmask={true}
                         ref={ref}
                         inputRef={inputRef}
-                        className="ui-input__input js-input-phone"
+                        className={`ui-input__input js-input-phone ${
+                          !phoneIsEmpty && !phoneIsValid ? "red" : ""
+                        }`}
                         placeholder="+7 (XXX) XXX-XX-XX"
                         value={phoneValue}
                         onAccept={handlePhoneChange}
@@ -241,7 +243,11 @@ export default function How() {
                         Адрес электронной почты
                       </label>
                       <input
-                        className="ui-input__input js-input-code"
+                        className={`ui-input__input js-input-code ${
+                          emailValue !== "" && !isValidEmail(emailValue)
+                            ? "red"
+                            : ""
+                        }`}
                         value={emailValue}
                         onChange={handleEmailChange}
                         placeholder="example@mail.ru"
@@ -295,7 +301,6 @@ export default function How() {
                     </span>
                   )}
                 </div>
-                <span className="reg-form__error"></span>
               </form>
             </div>
             <div className="registration__pic">

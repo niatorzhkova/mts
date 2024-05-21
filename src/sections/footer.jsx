@@ -6,13 +6,13 @@ export default function Footer() {
       {" "}
       <footer className="footer">
         <div className="container">
-          <a
+          {/* <a
             target="_blank"
             rel="noreferrer noopenner"
             href="https://rafinad.io/download-file/pravila-provedeniya-konkursa"
           >
             <p className="rules__header">Правила акции</p>
-          </a>
+          </a> */}
           <div>
             Акция действует с 25.04.2024 по 31.05.2024. Участники: физ. лица
             (18+), граждане и резиденты РФ, у которых нет кредитных карт «МТС

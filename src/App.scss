@@ -3,6 +3,7 @@
 .standard-text {
   font-weight: 400;
   font-size: 20px;
+  line-height: 1.3;
 }
 
 @media (max-width: 1400px) {
@@ -12,7 +13,7 @@
 }
 @media (max-width: 600px) {
   .standard-text {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 @media (min-width: 1200px) {
@@ -26,20 +27,11 @@
 }
 @media (min-width: 600px) {
   .main-banner__img {
-    // width: 50%;
+    width: 50%;
     // position: relative;
     // top: -20px;
     // right: -20px;
     // height: fit-content;
-  }
-}
-
-.benefits__section {
-}
-
-@media (max-width: 600px) {
-  .benefits__section {
-    padding-bottom: 65px;
   }
 }
 
@@ -183,7 +175,7 @@
 }
 @media (max-width: 600px) {
   .ui-checkbox__text {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -245,14 +237,21 @@
 }
 @media (max-width: 600px) {
   .main-banner__img {
+    margin-bottom: 20px;
   }
 }
 .main-banner__img {
-  width: 50%;
+  width: 100%;
 }
 .agree {
   margin-top: 5px;
   font-size: 20px;
+  line-height: 1.25;
+}
+@media (max-width: 600px) {
+  .agree {
+    font-size: 15px;
+  }
 }
 
 .btn-disabled {
@@ -279,6 +278,7 @@
 ::placeholder {
   color: #b8bdc1;
   font-weight: 400;
+  transition: 0.4s;
 }
 
 .registration__pic {
@@ -289,4 +289,59 @@
   background-color: #fff;
   border-radius: 32px;
   padding: 0 30px;
+}
+@media (max-width: 600px) {
+  .registration__form {
+    border-radius: 24px;
+    padding: 14px 22px 22px;
+  }
+}
+
+.main-banner__button {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .main-banner__button {
+    display: block;
+  }
+}
+
+.main-banner__button--mobile {
+  align-self: center;
+}
+
+@media (min-width: 600px) {
+  .main-banner__button--mobile {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .input__label {
+    margin-left: 20px;
+  }
+}
+
+.ui-input:hover {
+  .input__label {
+    color: #000000;
+    transition: 0.4s;
+  }
+  ::placeholder {
+    color: #000000;
+    transition: 0.4s;
+  }
+}
+
+.ui-input {
+  transition: 0.4s;
+}
+.ui-input__input:hover {
+  border-color: #000000;
+  transition: 0.4s;
+}
+
+.ui-input__input:focus {
+  color: #2c3135;
+  border-color: #2c3135;
 }
