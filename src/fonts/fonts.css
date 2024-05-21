@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "MTS Sans";
+  src: url("MTSSans-Regular.ttf");
+  src: local("MTSSans-Regular"), local("MTSSans-Regular"),
+    url("MTSSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MTS Sans";
+  src: url("MTSSans-Medium.ttf");
+  src: local("MTSSans-Medium"), local("MTSSans-Medium"),
+    url("MTSSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MTS Sans";
+  src: url("MTSSans-Bold.ttf");
+  src: local("MTSSans-Bold"), local("MTSSans-Bold"),
+    url("MTSSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
