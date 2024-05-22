@@ -205,7 +205,11 @@ export default function How() {
         <div className="container">
           <div className="registration__content">
             <div className="registration__form">
-              <form className="reg-form js-reg-form">
+              <form
+                className={`reg-form js-reg-form   ${
+                  isSubmitting ? "pointer-events-none" : ""
+                }`}
+              >
                 <div className="reg-form__row">
                   <div className="reg-form__field">
                     <div className="ui-input">
@@ -302,6 +306,18 @@ export default function How() {
                   )}
                 </div>
               </form>
+              <button
+                onClick={(e) => {
+                  handleSubmit(e);
+                }}
+                type="submit"
+                className={`reg-form__button ui-button ${
+                  isSubmitting ? "submitting" : ""
+                }  ${phoneIsEmpty ? "btn-disabled" : ""}
+                          `}
+              >
+                Оформить карту
+              </button>
             </div>
             <div className="registration__pic">
               <img src={require("../images/how-pic.webp")} />
