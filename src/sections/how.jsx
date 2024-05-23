@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { AES, enc } from "crypto-js";
+import { enc } from "crypto-js";
 import { IMaskInput } from "react-imask";
 
 export default function How() {
@@ -27,9 +27,15 @@ export default function How() {
     }
   }, []);
   useEffect(() => {
-    // const encryptedText = AES.encrypt(phoneValue, "rafinad");
+    const text = enc.Utf8.parse(phoneValue);
+    const encryptedText = enc.Hex.stringify(text);
+
+    // const encodedWord = enc.Hex.parse(encryptedText);
+    // const decrypted = enc.Utf8.stringify(encodedWord);
+
     const url = new URL(window.location.href);
-    // url.searchParams.set("aff_sub6", encryptedText);
+
+    url.searchParams.set("aff_sub6", encryptedText);
     url.searchParams.set("aff_sub7", "cert");
     window.history.pushState({ path: url.href }, "", url.href);
   }, [phoneValue]);
