@@ -6,14 +6,14 @@ export default function Footer() {
       {" "}
       <footer className="footer">
         <div className="container">
-          {/* <a
+          <a
             target="_blank"
             rel="noreferrer noopenner"
             href="https://rafinad.io/download-file/pravila-provedeniya-konkursa"
           >
             <p className="rules__header">Правила акции</p>
-          </a> */}
-          <div>
+          </a>
+          <div className="rules__header-text">
             Акция действует с 24.05.2024 по 30.06.2024. Участники: физ. лица
             (18+), граждане и резиденты РФ, у которых нет кредитных карт ПАО
             «МТС-Банк»; кредитная карта ПАО «МТС-Банк» оформлена на rafinad.io;

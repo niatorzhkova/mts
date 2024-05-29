@@ -2,11 +2,12 @@
 
 a {
   color: #5e6367;
+  text-decoration: none;
 }
 
 .ui-button {
   padding: 14px 32px 17px 32px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   background: var(--redColor);
@@ -27,7 +28,7 @@ a {
 }
 @media (max-width: 1024px) {
   .ui-button {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media (max-width: 600px) {
@@ -54,7 +55,7 @@ a {
 }
 @media (max-width: 600px) {
   .ui-caption {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 1.1;
   }
 }
@@ -96,8 +97,14 @@ a {
 }
 .ui-checkbox__label {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   line-height: 1.2;
+}
+@media (max-width: 600px) {
+  .ui-checkbox__label {
+    align-items: flex-start;
+    font-size: 14px;
+  }
 }
 @media (max-width: 600px) {
   .ui-checkbox__label {
@@ -114,12 +121,12 @@ a {
   display: block;
   margin-right: 10px;
   flex-shrink: 0;
+  margin-top: 8px;
 }
 @media (max-width: 600px) {
   .ui-checkbox__box {
     width: 16px;
     height: 16px;
-    margin-top: 8px;
     margin-right: 7px;
   }
 }
@@ -243,10 +250,11 @@ a {
 @media (max-width: 600px) {
   .u-collapse-all {
     font-size: 15px;
+    max-width: 95%;
   }
 }
 :root {
-  --primaryColor: #1d1d1b;
+  --primaryColor: #000;
   --redColor: #e30611;
   --siteWidth: 1180px;
   --formFieldBg: #d5e5fd;
@@ -363,32 +371,61 @@ img {
   margin-top: 60px;
   padding-right: 60px;
   padding-left: 60px;
+  background: #e1e2ff url(./images/hero-pic-desk.webp) right 100% / contain
+    no-repeat;
+  height: 600px;
+  max-height: 600px;
 }
 @media (max-width: 1024px) {
   .main-banner {
     font-size: 20px;
+    background: #e1e2ff url(./images/hero-pic-mobile.webp) right 100% / 50%
+      no-repeat;
+  }
+}
+@media (max-width: 768px) {
+  .main-banner {
+    background: #e1e2ff url(./images/hero-pic-mobile.webp) right 100% / 50%
+      no-repeat;
   }
 }
 @media (max-width: 600px) {
   .main-banner {
     font-size: 18px;
     padding-top: 17px;
-    padding-bottom: 25px;
-    border-radius: 24px;
+    padding-bottom: 40px;
+    border-radius: 20px;
     padding-left: 20px;
-    padding-right: 25px;
+    padding-right: 23px;
     margin-top: 20px;
+    min-height: 546px;
+    background: #e1e2ff url(./images/hero-pic-mobile.webp) right 100% / 68%
+      no-repeat;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-banner {
+    background: #e1e2ff url(./images/hero-pic-mobile.webp) right 100% / 84%
+      no-repeat;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-banner {
+    background: #e1e2ff url(./images/hero-pic-mobile.webp) right 100% / 94%
+      no-repeat;
   }
 }
 .main-banner__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 46%;
+  max-width: 57%;
   height: 100%;
   text-align: left;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .main-banner__content {
     max-width: 100%;
     margin-bottom: 7px;
@@ -397,10 +434,17 @@ img {
 
 .main-banner__title {
   margin-bottom: 13px;
+  font-size: 48px;
+}
+@media (max-width: 900px) {
+  .main-banner__title {
+    font-size: 36px;
+  }
 }
 @media (max-width: 600px) {
   .main-banner__title {
     margin-bottom: 10px;
+    font-size: 32px;
   }
 }
 
@@ -422,15 +466,15 @@ img {
     grid-template-columns: 1fr;
     padding-top: 20px;
     padding-bottom: 28px;
-    row-gap: 12px;
+    row-gap: 20px;
     column-gap: 12px;
   }
 }
 .benefit-item {
   text-align: center;
   background-color: #fff;
-  padding: 18px 20px 25px 20px;
-  border-radius: 24px;
+  padding: 18px 20px 20px 20px;
+  border-radius: 32px;
   text-align: left;
   min-height: 125px;
 }
@@ -439,7 +483,13 @@ img {
   .benefit-item {
     max-width: 380px;
     padding: 28px 30px;
-    min-height: 175px;
+  }
+}
+
+@media (max-width: 600px) {
+  .benefit-item {
+    min-height: unset;
+    border-radius: 20px;
   }
 }
 
@@ -461,13 +511,13 @@ img {
 }
 @media (max-width: 1024px) {
   .benefit-item__title {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 5px;
   }
 }
 
 .how-to-get {
-  padding: 45px 60px 60px;
+  padding: 55px 60px 60px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 50%;
@@ -478,7 +528,7 @@ img {
 @media (max-width: 600px) {
   .how-to-get {
     padding: 16px 20px;
-    border-radius: 24px;
+    border-radius: 20px;
   }
 }
 
@@ -487,10 +537,12 @@ img {
 }
 .how-to-get__title {
   margin-bottom: 20px;
+  font-size: 32px;
 }
 @media (max-width: 600px) {
   .how-to-get__title {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+    font-size: 24px;
   }
 }
 .registration {
@@ -534,7 +586,7 @@ img {
 }
 @media (max-width: 900px) {
   .registration__content {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 600px) {
@@ -583,6 +635,7 @@ img {
 .reg-form__button {
   margin-top: 23px;
   position: relative;
+  width: 100%;
 }
 @media (max-width: 1920px) {
   .reg-form__button {

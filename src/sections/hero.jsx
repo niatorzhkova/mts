@@ -23,9 +23,9 @@ export default function Hero() {
                 </a>
               </div>
             </div>
-            <div className="main-banner__img">
+            {/* <div className="main-banner__img">
               <img src={require("../images/hero-pic.webp")} />
-            </div>
+            </div> */}
             <a className="main-banner__button--mobile ui-button" href="#form">
               Оформить карту
             </a>

@@ -15,15 +15,23 @@ export default function Benefits({}) {
               </p>
             </div>
             <div className="benefit-item">
+              <p className="benefit-item__title">До 111 дней</p>
+              <p className="u-collapse-all">Льготный период на все покупки</p>
+            </div>
+            <div className="benefit-item">
+              <p className="benefit-item__title">До 13 месяцев</p>
+              <p className="u-collapse-all">
+                За первую покупку в МТС, сделанную в течение 30 дней с даты
+                получения карты
+              </p>
+            </div>
+            <div className="benefit-item">
               <p className="benefit-item__title">Бесплатно всегда</p>
               <p className="u-collapse-all">
                 Выпуск, доставка и обслуживание карты — 0 ₽
               </p>
             </div>
-            <div className="benefit-item">
-              <p className="benefit-item__title">До 111 дней</p>
-              <p className="u-collapse-all">Льготный период на все покупки</p>
-            </div>
+
             <div className="benefit-item">
               <p className="benefit-item__title">До 1 000 000 ₽</p>
               <p className="u-collapse-all">Кредитный лимит по карте</p>
@@ -33,13 +41,6 @@ export default function Benefits({}) {
               <p className="u-collapse-all">
                 Советуйте кредитку МТС Банка друзьям и получайте по 1500 ₽
                 за каждого
-              </p>
-            </div>
-            <div className="benefit-item">
-              <p className="benefit-item__title">До 13 месяцев</p>
-              <p className="u-collapse-all">
-                За первую покупку в МТС, сделанную в течение 30 дней с даты
-                получения карты
               </p>
             </div>
           </div>
