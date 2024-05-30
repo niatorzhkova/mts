@@ -22,7 +22,7 @@ export default function Footer() {
             Банка России №2268 от 17.12.2014 г. Информация актуальна на
             22.05.2024. Реклама. По всем вопросам касательно отправки
             сертификата Ozon обращайтесь на{" "}
-            <a href="mailto:support@rafinad.io">support@rafinad.io</a>
+            <a href="mailto:support@rafinad.io">support@rafinad.io</a>.
           </div>
         </div>
       </footer>
