@@ -9,7 +9,7 @@ export default function Footer() {
           <a
             target="_blank"
             rel="noreferrer noopenner"
-            href="https://rafinad.io/download-file/pravila-provedeniya-konkursa"
+            href="https://rafinad.io/download-file/pravila-akcii-mts"
           >
             <p className="rules__header">Правила акции</p>
           </a>
