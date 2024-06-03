@@ -161,7 +161,7 @@ export default function How() {
                   setIsSubmitting(false);
                 } else {
                   setIsSubmitting(false);
-                  window.location = `https://tracking.pn.mts.ru/tracker?channelId=08155071-9a4f-4661-8ecd-a0733674f9ba&lid=515027&webSub3=${wm_id}&webSub5=${click_id}&webSub3=cert`;
+                  window.location = `https://tracking.pn.mts.ru/tracker?channelId=08155071-9a4f-4661-8ecd-a0733674f9ba&lid=562042&webSub3=${wm_id}&webSub5=${click_id}&webSub2=cert`;
                 }
               });
             });
