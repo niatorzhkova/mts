@@ -6,12 +6,16 @@ export default function Footer() {
       {" "}
       <footer className="footer">
         <div className="container">
-          <div>
+          <a
+            target="_blank"
+            rel="noreferrer noopenner"
+            href="https://rafinad.io/download-file/pravila-provedeniya-konkursa"
+          >
             <p className="rules__header">
               Правила конкурса «Оформите кредитную карту MTS CASHBACK от МТС
               Банка и получите в подарок сертификат Ozon номиналом 2000 рублей
             </p>
-          </div>
+          </a>
 
           <div className="rules__header-text">
             Конкурс «Оформите кредитную карту MTS CASHBACK от МТС Банка и
@@ -27,13 +31,13 @@ export default function Footer() {
             покупку от 500 руб. в течение 30 дней. ПАО «МТС-Банк» Лицензия Банка
             России №2268 от 17.12.2014 г. Информация актуальна на 22.05.2024.
             Реклама. По всем вопросам касательно отправки сертификата Ozon
-            обращайтесь на
+            обращайтесь на{" "}
             <a href="mailto:support@rafinad.io">support@rafinad.io</a>.
           </div>
           <a
             target="_blank"
             rel="noreferrer noopenner"
-            href="https://rafinad.io/download-file/pravila-akcii-mts"
+            href="https://rafinad.io/download-file/poryadok-provedeniya-akcii-privedi-druga"
           >
             <p className="rules__header-bottom">
               ПОРЯДОК проведения стимулирующей акции «Приведи друга»
