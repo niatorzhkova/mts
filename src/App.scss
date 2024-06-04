@@ -158,7 +158,18 @@
 }
 @media (max-width: 600px) {
   .rules__header {
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+}
+
+.rules__header-bottom {
+  margin-top: 12px;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .rules__header-bottom {
+    margin-top: 5px;
     font-size: 12px;
   }
 }
